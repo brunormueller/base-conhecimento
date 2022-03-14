@@ -1,0 +1,5 @@
+dotnet aspnet-codegenerator controller -name DocumentoController -async -api -m Documento -dc banco_contextContext -outDir Controllers
+dotnet aspnet-codegenerator controller -name DocumentoTagController -async -api -m DocumentoTag -dc banco_contextContext -outDir Controllers
+dotnet aspnet-codegenerator controller -name HistoricoController -async -api -m Historico -dc banco_contextContext -outDir Controllers
+dotnet aspnet-codegenerator controller -name TagController -async -api -m Tag -dc banco_contextContext -outDir Controllers
+dotnet aspnet-codegenerator controller -name UsuarioController -async -api -m Usuario -dc banco_contextContext -outDir Controllers
