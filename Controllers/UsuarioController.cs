@@ -42,6 +42,26 @@ namespace base_conhecimento.Controllers
             return usuario;
         }
 
+        [HttpGet("{login}/{senha}")]
+        public async Task<ActionResult<Usuario>> GetUsuario(String login, String senha)
+        {
+            try
+            {
+                var usuario = await _context.Usuarios.FirstAsync(usu => usu.Login.Equals(login) && usu.Senha.Equals(senha));
+
+                if (usuario == null)
+                {
+                    return NotFound();
+                }
+
+                return usuario;
+            }
+            catch
+            {
+                return NotFound();
+            }
+        }
+
         // PUT: api/Usuario/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
