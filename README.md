@@ -4,10 +4,10 @@
 
 2° git  add . -> adiciona/prepara todos os arquivos pra commit ()
 
-3° git commit -m "mensagem de commiti" ->  envia pra repositorio loca
+3° git commit -m "mensagem de commit" ->  envia pra repositorio local
 
-4° git push -> envia para o cervidor o que foi commitado
+4° git push -> envia para o servidor o que foi commit
 
-# Link fronte
+# Link front
 https://github.com/brunormueller/projeto-front-end
 
